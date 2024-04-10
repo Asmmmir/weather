@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>WeatherApp</title>
+</head>
+
+<body>
+    <div class="app">
+        <div class="container">
+        <main class="main">
+            <form class="form" action="">
+                <input class="form__input" type="text" placeholder="Enter your city">
+                <button class="form__button">Search</button>
+            </form>
+            <div class="main__img">
+                <img class="main__img-item" src="https://openweathermap.org/img/wn/10d@4x.png" alt="" srcset="" width="200px" height="200px">
+            </div>
+            <div class="main__city">London</div>
+            <h3><span class="main__degree">31°</span></h3>
+            <div class="main__range">
+                <p class="main__max">Max/: <span class="main__max-degree">34°C</span></p>
+                <p class="main__min">Min/: <span class="main__min-degree">23°C</span></p>
+            </div>
+            <ul class="main__description">
+                <li class="main__description-item">
+                    <img src="./images/icons/rain.png" alt="" srcset="">
+                    <p class="main__humidity">18%</p>
+                </li>
+                <li class="main__description-item">
+                    <img src="./images/icons/wind.png" alt="" srcset="">
+                    <p class="main__wind">25 km/h</p>
+                </li>
+
+            </ul>
+
+            <div class="main__weekly">
+                    <p class="main__weekly-title">Next 7 days</p>
+                    <div class="main__weekly-list">
+                    </div>
+            </div>
+        </main>
+    </div>
+        <!-- <div id="location"></div> -->
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

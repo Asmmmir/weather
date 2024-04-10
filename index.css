@@ -1,0 +1,132 @@
+
+.app {
+    height: 100vh;
+    padding-inline: 2em;
+    background: linear-gradient(135deg, #29b2dd 0%, #3ad 47.38%, #2dc8ea 100%);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin-inline: auto;
+
+}
+
+.main {
+
+    margin-inline: auto;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    background: #64a4fd84;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+
+
+
+}
+
+
+
+.form {
+    input {
+      padding-inline: 1em;
+      border-radius: 1em;
+
+       outline: none;
+       border: none;
+    
+    }
+    button {
+        border-radius: 1em;
+        padding-inline: 1em;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        opacity: 0.9;
+    }
+
+    button:active {
+        transform: scale(0.99);
+    }
+}
+
+
+.main__city {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+
+.main__degree {
+    font-size: 64px;
+    
+}
+
+
+.main__range {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.5em;
+}
+
+.main__description {
+    width: 100%;
+    margin-top: 31px;
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 1em;
+
+   background:rgba(90, 150, 246, 0.381);
+   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.main__description-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3.5px;
+}
+
+
+
+.main__weekly {
+    margin-top: 31px;
+    align-self: flex-start;
+   
+}
+
+.main__weekly-title {
+    font-weight: bold;
+    text-shadow: -2px 1px 1px rgba(0, 0, 0, 0.254);
+}
+
+.main__weekly-list {
+    display: flex;
+    column-gap: 0.5em;
+    row-gap: 0.5em;
+    margin-top: 20px;
+    flex-wrap: wrap;
+
+}
+
+.main__weekly-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 155px;
+    padding: 0.5em;
+    border: 1px solid white; 
+    border-radius: 20px;
+}
