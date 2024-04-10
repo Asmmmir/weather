@@ -50,7 +50,8 @@ async function getCityByGeo(lat,lon) {
             `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API}`
         );
         const cityData = await res.json();
-
+        const cityName = cityData.name
+        
         cityNameElement.innerHTML = cityData.name;
         cityDegreeElement.innerHTML = `${(cityData.main.temp - 273).toFixed()}°`;
         cityMaxDegree.innerHTML = `${cityData.main.temp_max.toFixed()}°C`;
@@ -58,6 +59,8 @@ async function getCityByGeo(lat,lon) {
         cityHumidity.textContent = `${cityData.main.humidity}%`
         cityWind.textContent = `${cityData.wind.speed} km/h`
         cityImg.src = `https://openweathermap.org/img/wn/${cityData.weather[0].icon}@2x.png`
+
+        getWeeklyForcast(cityName);
 
     } catch (error) {
         console.log(error);
