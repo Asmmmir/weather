@@ -136,7 +136,7 @@ function renderWeeklyForecast(list) {
     weeklyList.innerHTML = '';
 
     list.forEach(forecast => {
-        const weeklyItem = document.createElement('div');
+        const weeklyItem = document.createElement('li');
         weeklyItem.classList.add('main__weekly-item');
 
         const degree = document.createElement('p');
